@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.social_media_automat_d84ac89a-6f17-4d9c-85fb-1454e4ab0cd8" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Social Media Automation</field>
+    <field name="parent_id" eval="False"/>
+    <field name="sequence">10</field>
+    <field name="web_icon">fa fa-diamond,#f1c40f,#34495e</field>
+  </record>
+  <record id="studio_customization.social_media_automat_68a70ea1-11c8-44e5-a6ec-f834e69a6490" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.social_accounts_cab19a56-4e19-47e3-a74d-5c737865c299"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Social Accounts</field>
+    <field name="parent_id" ref="studio_customization.social_media_automat_d84ac89a-6f17-4d9c-85fb-1454e4ab0cd8"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+</odoo>
